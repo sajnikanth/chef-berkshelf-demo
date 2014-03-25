@@ -10,5 +10,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      chef.cookbooks_path = "./cookbooks"
      chef.add_recipe "nginx"
      chef.add_recipe "apt"
+     chef.add_recipe "bluepill"
+     chef.add_recipe "rsyslog"
+     chef.add_recipe "build-essential"
+     chef.add_recipe "ohai"
+     chef.add_recipe "runit"
+     chef.add_recipe "yum"
+     chef.add_recipe "yum-epel"
   end
 end
